@@ -7,7 +7,8 @@ if [ ! -d "$ans" ]; then
 exit 1
 else
   PROJECT_PATH=$ans
-  #getProjectName(); # get project name
+  PROJECT_POM=$PROJECT_PATH/pom.xml
+  PROJECT_NAME=$(echo | grep -m 1 '<artifactId' ${PROJECT_POM} | cut -f2 -d">"|cut -f1 -d"<")
 fi
 
 # Get current 4.0 SDK
@@ -60,3 +61,4 @@ rm -rf $PROJECT_PATH/$PROJECT_NAME-share-docker/target
 #Change references in alfresco-global.properties from the base project name to the target.
 #Change references in pom.xml from the base project name to the target.
 #Change references in hotswap-agent.properties from the base project name to the target.
+

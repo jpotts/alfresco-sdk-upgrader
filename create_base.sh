@@ -2,9 +2,9 @@
 
 # Use the existing group, artifact, and version instead of these dummy values
 # so that the base will match the project we are upgrading
-GROUP_ID=com.metaversant
-ARTIFACT_ID=aio-400
-VERSION=1.0-SNAPSHOT
+#GROUP_ID=com.metaversant
+#PROJECT_NAME=aio-400
+#VERSION=1.0-SNAPSHOT
 
 # Removes the hidden "base" directory
 function remove_base() {
@@ -37,4 +37,4 @@ function setup_base() {
 
 }
 
-setup_base $GROUP_ID $ARTIFACT_ID $VERSION
+setup_base $GROUP_ID $PROJECT_NAME $VERSION

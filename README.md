@@ -29,8 +29,3 @@ bring those over so they don't have to be merged manually.
 * Add support for repo-only or Share-only projects. Currently, the script only
 supports the all-in-one project. It would be nice to add support for projects
 created from other archetypes.
-
-
-## Contributing
-
-TBD

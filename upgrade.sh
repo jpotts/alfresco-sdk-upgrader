@@ -17,7 +17,7 @@ fi
 
 # Get current 4.0 SDK
 echo Downloading the SDK v4.0.0 into $PWD/.base-sdk-project...
-. ./create_base.sh
+. ./lib/create_base.sh
 cd ..
 
 # BACKUP CURRENT 3.0 PROJECT

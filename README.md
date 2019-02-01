@@ -11,6 +11,10 @@ then begin the upgrade process.
 
 ## Tips
 
+The group ID, artifact ID, and version of your existing project will be
+maintained. However, if your project includes third-party dependencies or other
+pom.xml changes, you will have to manually merge those pom.xml files (see To Do).
+
 The script backs up your old project to a hidden backup directory relative to
 the root of the alfresco-sdk-upgrader project. If you need to recover the state
 of your project as it was before the upgrade, check there.
